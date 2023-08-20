@@ -26,10 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called 'name' and assign it the value of 'Dane'
+// We check if the name is 'Mary'.
+// The name is not 'Mary', the conditional moves to the next statement
+// We console.log 'How do you do?'
 
 //CODE
 /*
@@ -45,10 +45,11 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called secret but don't assign a value
+// We make a variable called 'code' and assign it the value of 123;
+// We check to see if code = 123, and it is. Because it passed the check, secret is asigned the value of 'super' and code is multiplied by 2
+// We check to see if code > 250. Code = 246 now so it fails the check
+// We console.log the value of secret. Secret = 'super' because it failed the last check and was not changed
 
 //CODE
 /*
@@ -70,10 +71,13 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called isStudent and set it to true
+// We make a variable called 'age' and assign it the value of 34
+// We make a variable called 'zip' and assign it the value of 55407
+// We check if isStudent is true AND zip > 80000, it fails
+// We check if isStudent is false OR age < 30, it fails
+// We check if isStudent is true with no other conditions, it passes
+// The console logs 'Welcome to Prime!' and stops checking statements
 
 //CODE
 /*
@@ -130,12 +134,14 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - colorOne and colorTwo were assigned each other's values
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
   colorOne = 'purple';
+  // FIX - colorTwo is not updated to 'purple'
 }
 */
 
@@ -147,6 +153,7 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
+//FIX - || operator is used instead of the &&, the conditional should check for both not either conditions
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -160,6 +167,7 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
+//FIX - the log results are switched, the first should return 'enter' and the second should return 'no entry'
 if(minAge <= age) {
   console.log('no entry');
 } else {
